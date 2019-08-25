@@ -45,7 +45,6 @@ def eat_apple(eaten):
         eaten = False # new apple only generated once per collision
 
 def refresh():
-    win.fill((0,0,0))
     global x
     global y
     if move == 'left':
@@ -64,6 +63,8 @@ def refresh():
         y += vel
         y_hist.append(y)
         x_hist.append(x)
+
+    win.fill((0,0,0))
 
     for i in range(0, length):
         pygame.draw.rect(win, (0,255,0), (x_hist[::-1][0+i], y_hist[::-1][0+i], grid, grid)) # draw character
