@@ -1,4 +1,4 @@
 {
     "python.pythonPath": "C:\\Users\\andyw\\.conda\\envs\\py36\\python.exe",
-    "python.linting.enabled": false
+    "python.linting.enabled": true
 }
